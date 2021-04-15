@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Life on track",
+    "version": "0.2",
+
+    "description": "Domain spend time tracker, blocker and redirecter.",
+    "homepage_url": "https://github.com/AmenoPh1x/Life-on-Track",
+
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/*"
+    ],
+
+    "background": {
+        "scripts": [
+            "js/back/defaultBannedUrls.js",
+            "js/back/background.js"
+        ]
+    },
+
+    "web_accessible_resources": [
+        "dashboard/build/index.html"
+    ]
+}
