@@ -1,0 +1,84 @@
+@use "./reset.scss";
+
+/* LIGHT THEME */
+$light-bg-color: #fff;
+$light-default-color: #424242;
+$light-mid-color: #626262;
+$light-link-color: #828282;
+$light-placeholder-color: #c4c4c4;
+
+/* DARK THEME */
+$dark-bg-color: #1d1d1d;
+$dark-default-color: #b4b4b4;
+/*$dark-mid-color: #626262;*/
+$dark-placeholder-color: #727272;
+/*$dark-link-color: #828282;*/
+
+
+/* DEFAULT STYLES */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  padding:0 1em;
+  background-color: $light-bg-color;
+  color: $light-default-color;
+}
+
+h1 {
+  font-size:3em;
+  margin:0.5em 0;
+}
+
+h2 {
+  font-size:2em;
+  margin:0.75em 0 0.5em;
+}
+
+ul {
+  margin-top:1em;
+  padding-left: 0;
+  margin-left:1em;
+  list-style:none;
+  
+  margin-bottom:1em;
+}
+
+li {
+  margin-bottom:0.75em;
+  padding-left: 0;
+}
+
+a {
+  color:$light-link-color;
+  text-decoration:none;
+}
+
+a[target=_blank]::after {
+  display:inline-block;
+  content: '\01F875';
+  font-size: 0.5em;
+  position: relative;
+  bottom:0.75em;
+  margin-left:0.25em;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight:bold;
+  color:$light-mid-color;
+  padding:0.5em 1em;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: $light-mid-color;
+}
+
+.btn:active {
+  color: $light-placeholder-color;
+}

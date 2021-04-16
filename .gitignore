@@ -1,27 +1,27 @@
-js/back/defaultBannedUrls.js
+back/js/defaultBannedUrls.js
 
 
 # REACT PART
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-dashboard/node_modules
-dashboard/.pnp
-dashboard/.pnp.js
+front/node_modules
+front/.pnp
+front/.pnp.js
 
 # testing
-dashboard/coverage
+front/coverage
 
 # production
-dashboard/build
+front/build
 
 # misc
 .DS_Store
-dashboard/.env.local
-dashboard/.env.development.local
-dashboard/.env.test.local
-dashboard/.env.production.local
+front/.env.local
+front/.env.development.local
+front/.env.test.local
+front/.env.production.local
 
-dashboard/npm-debug.log*
-dashboard/yarn-debug.log*
-dashboard/yarn-error.log*
+front/npm-debug.log*
+front/yarn-debug.log*
+front/yarn-error.log*

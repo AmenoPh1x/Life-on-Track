@@ -31,10 +31,19 @@ For other people to use your extension, you need to package it and submit it to 
 - Focus/Music sounds
 - Add an add-on management to add or remove more or less functionalities
 - Use an article provider from the github repository
+- Multilanguage support
+- In settings page, be able to configure:
+  - Language
+  - Banned URLs
+  - Alternative activities (with suggestions)
+  - Activate/Deactivate the different widgets:
+    - Alternative activities
+    - Inspirational quotes
+    - Sounds/Music for concentration
 
 ## Resources
 
-* [How to do a chrome extension](https://medium.freecodecamp.org/how-to-create-a-chrome-extension-part-1-ad2a3a77541)
+- [How to do a chrome extension](https://medium.freecodecamp.org/how-to-create-a-chrome-extension-part-1-ad2a3a77541)
 
 ## Lesons learnt
 
@@ -45,15 +54,24 @@ For other people to use your extension, you need to package it and submit it to 
 ## React part
 
 Initialized using:
+
+```bash
 $ npx create-react-app react
+```
 
 Serve the developed solution locally:
+
+```bash
 $ cd dashboard
 $ npm start
+```
 
 Build the solution:
+
+```bash
 $ cd dashboard
 $ npm run build
+```
 
 ## Create extension file
 

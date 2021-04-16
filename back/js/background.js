@@ -8,8 +8,7 @@
             let url = blockedUrls[i];
             if (request.url.includes(url)) {
                 return {
-                    // redirectUrl: browser.extension.getURL("html/dashboard.html")
-                    redirectUrl: browser.extension.getURL("dashboard/build/index.html")
+                    redirectUrl: browser.extension.getURL("../front/build/index.html")
                 };
             }
         }
