@@ -34,6 +34,10 @@ h2 {
   margin:0.75em 0 0.5em;
 }
 
+strong {
+  font-weight: 500;
+}
+
 ul {
   margin-top:1em;
   padding-left: 0;
@@ -50,35 +54,46 @@ li {
 
 a {
   color:$light-link-color;
-  text-decoration:none;
-}
-
-a[target=_blank]::after {
-  display:inline-block;
-  content: '\01F875';
-  font-size: 0.5em;
-  position: relative;
-  bottom:0.75em;
-  margin-left:0.25em;
-}
-
-a:hover {
   text-decoration:underline;
+
+  &:hover {
+    color: $light-default-color;
+  }
+
+  &:active {
+    color: $light-placeholder-color;
+  }
+
+  &[target=_blank]::after, &.external::after {
+    display:inline-block;
+    content: '\01F875';
+    font-size: 0.5em;
+    position: relative;
+    bottom:0.75em;
+    margin-left:0.25em;
+  }
 }
 
 .btn {
+  display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
   font-weight:bold;
-  color:$light-mid-color;
-  padding:0.5em 1em;
-}
+  color: $light-link-color;
+  padding:0.35em 1em;
+  border-radius: 3px;
 
-.btn:hover {
-  text-decoration: none;
-  color: $light-mid-color;
-}
+  &.bordered {
+    border: 2px solid $light-link-color;
+  }
 
-.btn:active {
-  color: $light-placeholder-color;
+  &:hover {
+    text-decoration: none;
+    color: $light-mid-color;
+  }
+
+  &:active {
+    background-color: $dark-bg-color;
+    color: $light-bg-color;
+  }
 }
